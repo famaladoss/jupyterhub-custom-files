@@ -7,3 +7,23 @@
      </div>
   </div>
 {% endblock %}
+
+{% block main %}
+<div class="login-container">
+       <div id="logo-container">
+        <img id="logo1" src="/static/biobb.png">
+        <img id="logo" src="/static/logo.svg?v=f9f0d927b67cc9dc99d788c822ca21c0" width="375px" height="180px">
+      </div>
+<div class="col-lg-10 col-lg-offset-1">
+<div id="header" class="text-center">
+        <h3>Try BioExcel Building Blocks workflows as interactive notebooks</h3>
+        <div id="explanation">
+          This is an installation of BinderHub in EMBL-EBI where everyone can experiment with biobb notebooks in an executable environment.
+        </div>
+</div>
+</div>
+{% block login %}
+{{ super() }}
+{% endblock login %}
+</div>
+{% endblock %}
