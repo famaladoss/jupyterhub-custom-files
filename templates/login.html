@@ -24,8 +24,7 @@
 </div>
 {% block login %}
 {{ super() }}
-{% endblock login %}
-    <div id="how-it-works">
+        <div id="how-it-works">
     <h3 class="text-center">How it works</h3>
 
     <div class="row">
@@ -63,5 +62,6 @@ Users cannot see the notebooks run by other users, but please avoid entering sec
     <div class="row text-center">
       <h3>questions?<br/>read about <a href="https://mmb.irbbarcelona.org/biobb/workflows">the workflows</a>, see the <a href="https://github.com/jupyterhub/binderhub">BinderHub code</a>, ask for help with <a href="mailto:ecp@ebi.ac.uk">Binder for biobb</a></h3>
     </div>
-  </div>
+{% endblock login %}
+</div>
 {% endblock %}
