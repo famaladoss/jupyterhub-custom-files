@@ -67,5 +67,22 @@ Users cannot see the notebooks run by other users, but please avoid entering sec
       <h3>questions?<br/>read about <a href="https://mmb.irbbarcelona.org/biobb/workflows">the workflows</a>, see the <a href="https://github.com/jupyterhub/binderhub">BinderHub code</a>, ask for help with <a href="mailto:ecp@ebi.ac.uk">Binder for biobb</a></h3>
     </div>
 {% endblock login %}
+<div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice" data-vf-js-banner data-vf-js-banner-state="dismissible" data-vf-js-banner-button-theme="primary" data-vf-js-banner-button-text="Accept and close" data-vf-js-banner-cookie-name="PrivacyNotice" data-vf-js-banner-cookie-version="0.1" data-vf-js-banner-auto-accept="false">
+    <div class="vf-banner__content | vf-grid" data-vf-js-banner-text>
+      <p class="vf-banner__text vf-banner__text--lg">
+        This website uses cookies, and the limiting processing of your personal data to function. By using the site you are agreeing to this as outlined in our <a class="vf-banner__link" href="https://www.ebi.ac.uk/data-protection/privacy-notice/binder-for-biobb">Privacy Notice</a>.
+      </p>
+    </div>
+
 </div>
+{% endblock %}
+{% block script %}
+{{ super() }}
+<!-- CSS only -->
+  <link rel="stylesheet" href="https://assets.emblstatic.net/vf/v2.3.3-rc.3/css/styles.css">
+  <!-- JS -->
+  <script type="module">
+  import {vfBanner} from 'https://assets.emblstatic.net/vf/v2.3.3-rc.3/assets/vf-banner/vf-banner.js';
+  vfBanner();
+  </script>
 {% endblock %}
